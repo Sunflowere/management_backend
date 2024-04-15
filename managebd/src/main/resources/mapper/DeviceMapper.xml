@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiannanzhi.managebd.mapper.DeviceMapper">
+
+    <resultMap id="BaseResultMap" type="com.jiannanzhi.managebd.Entity.Device">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="model" column="model" jdbcType="VARCHAR"/>
+            <result property="did" column="did" jdbcType="INTEGER"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="errorCount" column="errorCount" jdbcType="INTEGER"/>
+            <result property="deletion" column="delete" jdbcType="BIT"/>
+            <result property="isEdevice" column="isEdevice" jdbcType="BIT"/>
+            <result property="isWdevice" column="isWdevice" jdbcType="BIT"/>
+            <result property="isGdevice" column="isGdevice" jdbcType="BIT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,model,
+        did,status,errorCount,
+        deletion,isEdevice,isWdevice,
+        isGdevice
+    </sql>
+</mapper>

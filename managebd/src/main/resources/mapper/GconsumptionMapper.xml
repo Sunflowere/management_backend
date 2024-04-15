@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiannanzhi.managebd.mapper.GconsumptionMapper">
+
+    <resultMap id="BaseResultMap" type="com.jiannanzhi.managebd.Entity.Gconsumption">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="department_id" column="department_id" jdbcType="INTEGER"/>
+            <result property="system_G" column="system_G" jdbcType="VARCHAR"/>
+            <result property="calculation" column="calculation" jdbcType="DOUBLE"/>
+            <result property="date_time" column="date_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,department_id,system_G,
+        calculation,date_time
+    </sql>
+</mapper>

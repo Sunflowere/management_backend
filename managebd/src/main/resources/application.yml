@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: management
+    #DataSource Config
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/qingge_bg
+    username: root
+    password: hsp
+server:
+  port: 9090
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #扫描所有mybatis配置文件
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #在springboot的yml配置文件中配置,关闭自动映射成下划线形式
+    map-underscore-to-camel-case: false
+
+
+
+files:
+  upload:
+    path: D:/DHU/new/JAVA/project/guanlixitong/management02/files/
+#     path: /www/dataProject/files/

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiannanzhi.managebd.mapper.DepartmentMapper">
+
+    <resultMap id="BaseResultMap" type="com.jiannanzhi.managebd.Entity.Department">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="pid" column="pid" jdbcType="INTEGER"/>
+            <result property="address" column="address" jdbcType="VARCHAR"/>
+            <result property="sumE" column="sumE" jdbcType="DOUBLE"/>
+            <result property="sumW" column="sumW" jdbcType="DOUBLE"/>
+            <result property="sumG" column="sumG" jdbcType="DOUBLE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,pid,
+        address,sumE,sumW,sumG
+    </sql>
+</mapper>
