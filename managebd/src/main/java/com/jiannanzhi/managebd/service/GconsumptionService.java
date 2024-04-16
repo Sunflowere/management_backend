@@ -12,4 +12,7 @@ import com.jiannanzhi.managebd.common.Result;
 public interface GconsumptionService extends IService<Gconsumption> {
 
     Result getGSystemPie(Integer department_id, String start_date, String end_date);
+
+    Result getTrend(Integer department_id, String start_date, String end_date);
+
 }

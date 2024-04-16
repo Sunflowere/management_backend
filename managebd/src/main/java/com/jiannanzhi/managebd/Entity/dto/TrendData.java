@@ -2,7 +2,10 @@ package com.jiannanzhi.managebd.Entity.dto;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class TrendData {
-    private String[] da
+    private List<String> xAxisArray;
+    private List<Double> valueArray;
 }

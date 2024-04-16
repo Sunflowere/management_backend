@@ -13,4 +13,6 @@ public interface WconsumptionService extends IService<Wconsumption> {
 
     Result getWSystemPie(Integer department_id, String start_date, String end_date);
 
+    Result getTrend(Integer department_id, String start_date, String end_date);
+
 }

@@ -41,6 +41,11 @@ public class GconsumptionController {
     private DepartmentMapper departmentMapper;
 
 
+    @GetMapping("/trend")
+    public Result getTrend(@RequestParam Integer department_id, @RequestParam String start_date, @RequestParam String end_date) {
+        return gconsumptionService.getTrend(department_id, start_date, end_date);
+    }
+
     @GetMapping("/systemPie")
     public Result getGSystemPie(@RequestParam Integer department_id, @RequestParam String start_date, @RequestParam String end_date) {
 

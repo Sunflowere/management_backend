@@ -40,6 +40,11 @@ public class WconsumptionController {
     @Resource
     private DepartmentMapper departmentMapper;
 
+    @GetMapping("/trend")
+    public Result getTrend(@RequestParam Integer department_id, @RequestParam String start_date, @RequestParam String end_date) {
+        return wconsumptionService.getTrend(department_id, start_date, end_date);
+    }
+
     @GetMapping("/systemPie")
     public Result getWSystemPie(@RequestParam Integer department_id, @RequestParam String start_date, @RequestParam String end_date) {
 
